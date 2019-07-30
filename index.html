@@ -1,15 +1,18 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8">
-	<title><script>liff.getAccessToken();</script></title>
+	<title>每周健康紀錄</title>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
 
 </head>
 
 <body>
+  <a id="test"></a>
   <a id="link"></a>
 	<canvas id="myChart" width="10" height="10" style='width:10px;height:10px'></canvas>
 <script>
+const accessToken = liff.getAccessToken();
+document.getElementById('test').textContent = accessToken;
 var ctx = document.getElementById('myChart').getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'line',
