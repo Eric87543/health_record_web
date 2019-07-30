@@ -1,4 +1,4 @@
-<!--
+
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8">
@@ -16,8 +16,11 @@ liff.init(function (data) {
     });
 function initializeApp(data)
 {
-	const accessToken = liff.getAccessToken();
-	document.getElementById('test').textContent = accessToken;
+	liff.getProfile().then(function (profile) {
+            document.getElementById('test').textContent = profile.userId;
+        }).catch(function (error) {
+            window.alert("Error getting profile: " + error);
+        });
 }
 </script>
   <a id="link"></a>
@@ -80,8 +83,8 @@ var myChart = new Chart(ctx, {
 </script>
 
 </body>
--->
 
+<!--
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>4545641561</title>
@@ -167,3 +170,4 @@ var myChart = new Chart(ctx, {
     <script src="liff-starter.js"></script>
 </body>
 
+-->
