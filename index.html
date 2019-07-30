@@ -8,11 +8,14 @@
 
 <body>
   <a id="test"></a>
+<script>
+const accessToken = liff.getAccessToken();
+document.getElementById('test').textContent = accessToken;	
+</script>
   <a id="link"></a>
 	<canvas id="myChart" width="10" height="10" style='width:10px;height:10px'></canvas>
 <script>
-const accessToken = liff.getAccessToken();
-document.getElementById('test').textContent = accessToken;
+
 var ctx = document.getElementById('myChart').getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'line',
