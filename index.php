@@ -14,17 +14,17 @@
 <script>
 
 function express(){
-liff.getProfile().then(function (profile) {
-            var id = profile.userId;
-        })
+liff.getProfile().then(profile => {
+  var id = profile.userId;
+})
 var value="0";
 
 location.href="test2.php?id=" +id+"&value="+value;
 }
 function express2(){
-liff.getProfile().then(function (profile) {
-            var id = profile.userId;
-        })
+liff.getProfile().then(profile => {
+  var id = profile.userId;
+})
 var value="1";
 location.href="test2.php?id=" +id+"&value="+value;
 }
