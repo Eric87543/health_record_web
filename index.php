@@ -15,10 +15,6 @@ This file allows you to host this page as a static file on Heroku
 
 <body>
 <script>
-
-#liff.init(function (data) {
-#        initializeApp(data);
-#    });
 function express(){
 var value="0";
 liff.getProfile().then(function (profile) {
