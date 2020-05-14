@@ -12,25 +12,23 @@
 </head>
 <body>
 <script>
-liff.init();
-function express(){
+liff.init()
 liff.getProfile().then(profile => {
   var id = profile.userId;
 })
+document.getElementById('test').textContent = id;
+function express(){
 var value="0";
 
 location.href="test2.php?id=" +id+"&value="+value;
 }
 function express2(){
-liff.getProfile().then(profile => {
-  var id = profile.userId;
-})
 var value="1";
 location.href="test2.php?id=" +id+"&value="+value;
 }
 </script>
-<input type ="button" onclick="express()" value="血糖與體重">
-<input type ="button" onclick="express2()" value="脈搏與血壓">
+<input type ="button" onclick="express(id)" value="血糖與體重">
+<input type ="button" onclick="express2(id)" value="脈搏與血壓">
 
 
 
