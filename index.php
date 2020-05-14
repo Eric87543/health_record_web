@@ -11,6 +11,7 @@
 
 </head>
 <body>
+<p id="test">4444</p>
 <script>
 liff.init(function (data) {
         initializeApp(data);
