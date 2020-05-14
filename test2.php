@@ -56,8 +56,8 @@ while($row = mysqli_fetch_array($result))
     $i=$i+1;
 
 }
-echo $i;
-print_r($date[0]);
+#echo $i;
+#print_r($date[0]);
 
 
 ?>
