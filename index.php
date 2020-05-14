@@ -14,13 +14,17 @@
 <script>
 
 function express(){
-var id="U7c38b58ab4c0904c6c3cbbfa211cabf2";
+liff.getProfile().then(function (profile) {
+            var id = profile.userId;
+        })
 var value="0";
 
 location.href="test2.php?id=" +id+"&value="+value;
 }
 function express2(){
-var id="U7c38b58ab4c0904c6c3cbbfa211cabf2";
+liff.getProfile().then(function (profile) {
+            var id = profile.userId;
+        })
 var value="1";
 location.href="test2.php?id=" +id+"&value="+value;
 }
