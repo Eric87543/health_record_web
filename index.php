@@ -12,7 +12,7 @@
 </head>
 <body>
 <script>
-
+liff.init();
 function express(){
 liff.getProfile().then(profile => {
   var id = profile.userId;
