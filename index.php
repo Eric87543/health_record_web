@@ -11,8 +11,9 @@
 
 </head>
 <body>
+<p id="test"></p>
 <script>
-var id="";
+var id="ggg";
 liff.init(function (data) {
         initializeApp(data);
     });
@@ -34,6 +35,7 @@ var value="1";
 #var id="U7c38b58ab4c0904c6c3cbbfa211cabf2";	
 location.href="test2.php?id=" +id+"&value="+value;
 }
+document.getElementById('test').textContent = id;
 </script>
 <input type ="button" onclick="express()" value="血糖與體重">
 <input type ="button" onclick="express2()" value="脈搏與血壓">
