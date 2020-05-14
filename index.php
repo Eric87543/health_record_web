@@ -12,10 +12,10 @@
 </head>
 <body>
 <script>
-liff.init()
+liff.init();
 liff.getProfile().then(function (profile) {
             var id = profile.userId;
-        })
+        });
 document.getElementById('test').textContent = id;
 function express(){
 var value="0";
