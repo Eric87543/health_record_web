@@ -11,9 +11,9 @@
 
 </head>
 <body>
-<p id="test">4444</p>
+#<p id="test">4444</p>
 <script>
-var id=""
+var id="";
 liff.init(function (data) {
         initializeApp(data);
     });
