@@ -13,30 +13,31 @@
 <body>
 <p id="test">4444</p>
 <script>
+var id=""
 liff.init(function (data) {
         initializeApp(data);
     });
 function initializeApp(data)
 {
 	liff.getProfile().then(function (profile) {
-            document.getElementById('test').textContent = profile.userId;
+            id = profile.userId;
         }).catch(function (error) {
             window.alert("Error getting profile: " + error);
         });
 }
 function express(){
 var value="0";
-var id="U7c38b58ab4c0904c6c3cbbfa211cabf2";
+#var id="U7c38b58ab4c0904c6c3cbbfa211cabf2";
 location.href="test2.php?id=" +id+"&value="+value;
 }
 function express2(){
 var value="1";
-var id="U7c38b58ab4c0904c6c3cbbfa211cabf2";	
+#var id="U7c38b58ab4c0904c6c3cbbfa211cabf2";	
 location.href="test2.php?id=" +id+"&value="+value;
 }
 </script>
-<input type ="button" onclick="express(id)" value="血糖與體重">
-<input type ="button" onclick="express2(id)" value="脈搏與血壓">
+<input type ="button" onclick="express()" value="血糖與體重">
+<input type ="button" onclick="express2()" value="脈搏與血壓">
 
 
 
