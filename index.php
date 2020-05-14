@@ -13,7 +13,7 @@
 <body>
 <p id="test"></p>
 <script>
-var id="ggg";
+var id="U7c38b58ab4c0904c6c3cbbfa211cabf2";
 function express(){
 var value="0";
 location.href="test2.php?id=" +id+"&value="+value;
