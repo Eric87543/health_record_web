@@ -11,7 +11,6 @@
 
 </head>
 <body>
-#<p id="test">4444</p>
 <script>
 var id="";
 liff.init(function (data) {
