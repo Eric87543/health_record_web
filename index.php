@@ -19,6 +19,8 @@ function initializeApp(data)
 {
 	liff.getProfile().then(function (profile) {
             document.getElementById('test').textContent = profile.userId;
+        }).catch(function (error) {
+            window.alert("Error getting profile: " + error);
         });
 }
 function express(){
