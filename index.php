@@ -11,7 +11,7 @@ This file allows you to host this page as a static file on Heroku
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
 	<script src="https://d.line-scdn.net/liff/1.0/sdk.js"></script>
 
-</head>
+  </head>
 
 <body>
 <script>
